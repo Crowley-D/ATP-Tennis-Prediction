@@ -41,7 +41,8 @@ This project demonstrates end-to-end data science capabilities by building a pre
 - **Cross-validation AUC**: 80.7% ± 0.26%
 
 ### Betting Strategy Performance (2025 Data)
-![image](./PNL.png)
+<img width="1489" height="790" alt="PNL" src="https://github.com/user-attachments/assets/09088ad5-01d0-4650-b44e-32eaca11d257" />
+
 
 ### Key Strategy Metrics
 - **Total Bets Placed**: 162

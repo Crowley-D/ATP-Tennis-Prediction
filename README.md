@@ -74,3 +74,8 @@ This project demonstrates the ability to:
 - Implement quantitative trading strategies with risk management
 - Handle real-time data integration and API development
 - Create end-to-end machine learning pipelines
+
+### References and Credits
+- Jeff Sackmann Datasets - [Link Text](https://github.com/JeffSackmann/tennis_atp)
+- Green Code - Project provided excellent reference point.
+- Glad94 Infotennis Infosys API Match Scraper - [Link Text](https://github.com/glad94/infotennis/tree/main)

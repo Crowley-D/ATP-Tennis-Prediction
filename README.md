@@ -1,6 +1,6 @@
 # Tennis Match Prediction & Betting Strategy Model
 
-A production-grade machine learning system that predicts tennis match outcomes and implements profitable betting strategies through a sophisticated multi-stage data pipeline, chronological statistics engine, and ensemble modeling.
+An end-to-end machine learning system that predicts tennis match outcomes and implements profitable betting strategies through a sophisticated multi-stage data pipeline, chronological statistics engine, and ensemble modeling.
 
 ## 🎯 Project Overview
 
@@ -28,13 +28,13 @@ Built a robust 4-stage ETL pipeline with automated data quality checks and dupli
 - Idempotent duplicate detection prevents reprocessing across 80K+ matches
 
 **Stage 3: Statistics Generation Engine**
-- Chronologically-ordered statistics calculation with strict temporal boundary enforcement[Custom Stats API](StatsProcessing/updateStats.py)
-- ChronologicalDeque data structures enable O(1) append and efficient time-windowed queries[Chronological Storage](Utilities/chronological_storage.py)
+- Chronologically-ordered statistics calculation with strict temporal boundary enforcement [Custom Stats API](StatsProcessing/updateStats.py)
+- ChronologicalDeque data structures enable O(1) append and efficient time-windowed queries [Chronological Storage](Utilities/chronological_storage.py)
 - Sequential processing maintains data integrity and prevents look-ahead bias
 - Comprehensive metrics: rolling win rates, H2H records, form indicators, tournament performance
 
 **Stage 4: Elo Rating System**
-- Surface-specific Elo ratings (Hard/Clay/Grass/Carpet) with general rating[Elo Manager](EloProcessing/elo_manager.py)
+- Surface-specific Elo ratings (Hard/Clay/Grass/Carpet) with general rating [Elo Manager](EloProcessing/elo_manager.py)
 - Dynamic K-factor adjustments based on tournament level, round importance, and best-of format
 - Batch processing with checkpointing for 80K+ match datasets
 - Automatic recalculation detection for out-of-order match insertion
